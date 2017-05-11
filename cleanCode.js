@@ -27,7 +27,20 @@ window.addEventListener("resize", function(){
     getMeasurements()
 }, false)
 
-var message = '<div id="message" title="This is a dialog box"><p>Just want to put some text in here</p></div>'
+var message = '<div id="message"><div class="cart-items-number"><span class="total-items" style="font-weight:bold">You have '+numberOfItems+ ' in you cart</span><div class="box-cart-products"><div class="box-cart-product"><div class="box-cart-image"><img src="'+itemImages[0]+'"/></div></div></div></div><div class="order-total"><td>Estimated Total</td><td class="order-value">'+cartTotal+'</td></div></div>'
+
+<div id="message">
+  <div class="cart-items-number">
+    <span class="total-items" style="font-weight:bold">You have '+numberOfItems+ ' in you cart</span>
+  </di>
+  <div class="box-cart-products">
+    <div class="box-cart-product">
+      <div class="box-cart-image"><img src="'+itemImages[0]+'"/></div>
+    </div>
+  </div>
+  <div class="order-total"><td>Estimated Total</td><td class="order-value">'+cartTotal+'</td></div>
+</div>
+
 
 window.addEventListener("scroll", function(){
     clearTimeout(throttlescroll)
@@ -39,8 +52,8 @@ window.addEventListener("scroll", function(){
         $(message).dialog({
           closeOnEscape: false,
           open: function(event, ui) {$(".ui-dialog-titlebar-close").hide()},
-          height: 350,
-          width: 450,
+          height: 460,
+          width: 900,
           modal:true,
           buttons:{"Close": function() {$(this).dialog('destroy')}},
           close: function(ev, ui) {$(this).close()},

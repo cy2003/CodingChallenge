@@ -115,14 +115,12 @@ function displayBox(){
   <div id="dialog-container" class="dialog-content ui-dialog-content ui-widget-content" style="max-width: 800px; width: auto; min-height: 0px; max-height: none; height: 36px;">
 
     <div class="content-box">
-      <!-- validate if the user is from Europe Continent -->
 
-      <!-- dwMarker="content" dwContentID="b1a66e6f7a877f1e1888d5008b" -->
       <h1>Join the Club!</h1>
       <p style="font-size: 18px">Get <b>15% OFF</b> Your Gear</p>
       <p></p>
       <p>Join our newsletter for the latest on products, promotions, and events and receive a coupon for 15% off full price items in your email box</p>
-      <!-- End content-asset -->
+
 
       <form method="POST" action="/on/demandware.store/Sites-Marmot_US-Site/en_US/Newsletter-SubscribeForm" name="dwfrm_newsletter" class="newsletter-signup">
         <fieldset>

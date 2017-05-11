@@ -31,6 +31,7 @@ var message = '<div id="message" title="This is a dialog box"><p>Just want to pu
 
 window.addEventListener("scroll", function(){
     clearTimeout(throttlescroll)
+        //checks amountScrolled every 50 milliseconds
         throttlescroll = setTimeout(function(){
         amountScrolled()
     }, 50)
@@ -40,11 +41,14 @@ window.addEventListener("scroll", function(){
           //this gets rid of the automated closed tab
           closeOnEscape: false,
           open: function(event, ui) {$(".ui-dialog-titlebar-close").hide()},
-          height: 350,
-          width: 450,
+          //size of dialog box
+          height: 400,
+          width: 600,
+          //creates a transparent overlay in the background
           modal:true,
           /*this creates a close button. Used instead of the automated close tab
-          This way the dialog box will get triggered again when closed*/
+          This way the dialog box will get triggered again when closed. The ui
+          object is empty but included for consistency with other events*/
           buttons:{"Close": function() {$(this).dialog('destroy')}},
           close: function(ev, ui) {$(this).close()},
           //This fixes the box in place. Doesn't move when you scroll

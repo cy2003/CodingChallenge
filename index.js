@@ -29,22 +29,22 @@ window.addEventListener("resize", function(){
 
 var message = '<div id="message"><div class="cart-items-number"><span class="total-items" style="font-weight:bold">You have '+numberOfItems+ ' in you cart</span><div class="box-cart-products"><div class="box-cart-product"><div class="box-cart-image"><img src="'+itemImages[0]+'"/></div></div></div></div><div class="order-total"><td>Estimated Total</td><td class="order-value">'+cartTotal+'</td></div></div>'
 
-// <div id="message">
-//   <div class="cart-items-number">
-//     <span class="total-items" style="font-weight:bold">You have '+numberOfItems+ ' in you cart</span>
-//   </div>
-//   <div class="box-cart-products">
-//     <div class="box-cart-product">
-//       <div class="box-cart-product-image"><img src="'+itemImages[0]+'"/></div>
-//       <div class="box-cart-product-name"><span>'+itemNames[0]+'</span></div>
-//     </div>
-//     <div class="box-cart-product">
-//       <div class="box-cart-product-image"><img src="'+itemImages[1]+'"/></div>
-//       <div class="box-cart-product-name"><span>'+itemNames[1]+'</span></div>
-//     </div>
-//   </div>
-//   <div class="order-total"><td>Estimated Total</td><td class="order-value">'+cartTotal+'</td></div>
-// </div>
+<div id="message">
+  <div class="cart-items-number">
+    <span class="total-items" style="font-weight:bold">You have '+numberOfItems+ ' in you cart</span>
+  </div>
+  <div class="box-cart-products">
+    <div class="box-cart-product">
+      <div class="box-cart-product-image"><img src="'+itemImages[0]+'"/></div>
+      <div class="box-cart-product-name"><span>'+itemNames[0]+'</span></div>
+    </div>
+    <div class="box-cart-product">
+      <div class="box-cart-product-image"><img src="'+itemImages[1]+'"/></div>
+      <div class="box-cart-product-name"><span>'+itemNames[1]+'</span></div>
+    </div>
+  </div>
+  <div class="order-total"><td>Estimated Total</td><td class="order-value">'+cartTotal+'</td></div>
+</div>
 
 window.addEventListener("scroll", function(){
     clearTimeout(throttlescroll)

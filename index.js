@@ -43,7 +43,10 @@ var message = '<div id="message"><div class="cart-items-number"><span class="tot
       <div class="box-cart-product-name"><span>'+itemNames[1]+'</span></div>
     </div>
   </div>
-  <div class="order-total"><td>Estimated Total</td><td class="order-value">'+cartTotal+'</td></div>
+  <div class="order-total">
+    <td>Estimated Total</td>
+    <td class="order-value">'+cartTotal+'</td>
+  </div>
 </div>
 
 window.addEventListener("scroll", function(){

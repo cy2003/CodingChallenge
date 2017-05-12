@@ -8,29 +8,29 @@
     <div id="container" style="width:700px; height:450px">
       <div id="message" style="padding:25px 50px">
         <div class="cart-items-number" style="text-align:center; margin-bottom:20px; padding-bottom:20px; border-bottom:1px solid #dcdee2 ">
-          <span class="total-items" style="font-size:36px; letter-spacing:-0.26px">Your Cart - 2 items</span>
+          <span class="total-items" style="font-size:36px; letter-spacing:-0.26px">Your Cart - '+numberOfItems+'</span>
         </div><div class="box-cart-products" style="float:left; width:50%; height:300px">
           <div class="box-cart-product" style="border-right:1px solid #dcdee2; overflow:hidden">
             <div class="box-cart-product-image" style="float:left; width:40%">
-              <img src="https://s7d2.scene7.com/is/image/marmot/18670_6260_f?$thumb$"/>
+              <img src="'+itemImages[0]+'"/>
             </div>
             <div class="box-cart-product-name" style="float:right; width:60%; margin-top:50px; font-weight:bold">
-              <span>WM's Sparkler Hat</span>
+              <span>'+itemNames[0]+'</span>
             </div>
           </div>
           <div class="box-cart-product" style="border-right:1px solid #dcdee2; overflow:hidden">
             <div class="box-cart-product-image" style="float:left; width:40%">
-              <img src="https://s7d2.scene7.com/is/image/marmot/18370_001_f?$thumb$"/>
+              <img src="'+itemImages[1]+'"/>
             </div>
             <div class="box-cart-product-name" style="float:right; width:60%; margin-top:50px; font-weight:bold">
-              <span>WM's Glide Softshell</span>
+              <span>'+itemNames[1]+'</span>
             </div>
           </div>
         </div>
         <div class="order-total" style="float:left; margin-top:42px; margin-bottom:40px; width:50%; font-weight:bold">
           <div style="padding:30px">
             <span style="float:left">Estimated Total</span>
-            <span class="order-value" style="float:right">$42.44</span>
+            <span class="order-value" style="float:right">'+cartTotal+'</span>
           </div>
           <div style="padding:30px">
             <a class="box-cart-link primary-button show-for-large" style="background-color:#cc0001; color:#fff; border:1px solid #cc0001; padding:14px 30px; font-size:12px; font-weight:bold; display:inherit; width:74%; text-align:center; cursor:pointer" href="https://marmot.com/cart">Go To Cart</a>

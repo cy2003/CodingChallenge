@@ -61,8 +61,9 @@ window.addEventListener("scroll", function(){
           //this gets rid of the automated closed tab
           closeOnEscape: false,
           open: function(event, ui) {$(".ui-dialog-titlebar-close").hide()},
-          //size of dialog box
-          height: 400,
+          /* size of dialog box. When height is set to auto, it makes the height
+          dynamic. It will adjust automatically as per content */
+          height: auto,
           width: 600,
           //creates a transparent overlay in the background
           modal:true,

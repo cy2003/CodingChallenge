@@ -36,11 +36,9 @@ window.addEventListener("scroll", function(){
     if(amountScrolled() >= 90){
       if(document.getElementById('message') == null && $('.mini-cart-image').length > 0){
         $(message).dialog({
-          closeOnEscape: false,
-          open: function(event, ui) {$(".ui-dialog-titlebar-close").hide()},
-          buttons:{"X": function() {$(this).dialog('destroy')}},
-          close: function(ev, ui) {$(this).close()},
-          height: 440,
+          close: function() {$(this).dialog('destroy')},
+          closeText: "X",
+          height: 'auto',
           width: 700,
           modal:true,
           create: function (event) {

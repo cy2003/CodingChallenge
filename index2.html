@@ -40,3 +40,71 @@
     </div>
   </body>
 </html>
+
+//Iterating images and names
+
+var message =
+'<div id="message" style="padding:25px 50px">
+  <div class="cart-items-number" style="text-align:center; margin-bottom:20px; padding-bottom:20px; border-bottom:1px solid #dcdee2 ">
+    <span class="total-items" style="font-size:36px; letter-spacing:-0.26px">Your Cart - '+numberOfItems+'</span>
+  </div>
+  <div class="box-cart-products" style="float:left; width:50%; height:300px">
+    <div class="box-cart-product" style="border-right:1px solid #dcdee2; overflow:hidden">
+      <script>'+
+          $(itemImages).each(function(i, e){
+            $(".box-cart-product").append(
+              '<div class="box-cart-product" style="border-right:1px solid #dcdee2; overflow:hidden">
+                <div class="box-cart-product-image" style="float:left; width:40%"><img src="'+itemImages[i]+'"/></div>
+                <div class="box-cart-product-name" style="float:right; width:60%; margin-top:50px; font-weight:bold"><span>'+itemNames[i]+'</span></div>
+              </div>'
+            )
+          })
+          
+        +'</script>
+    </div>
+  </div>
+  <div class="order-total" style="float:left; margin-top:42px; margin-bottom:40px; width:50%; font-weight:bold">
+    <div style="padding:30px">
+      <span style="float:left">Estimated Total</span>
+      <span class="order-value" style="float:right">'+cartTotal+'</span>
+    </div>
+    <div style="padding:30px">
+      <a class="box-cart-link primary-button show-for-large" style="background-color:#cc0001; color:#fff; border:1px solid #cc0001; padding:14px 30px; font-size:12px; font-weight:bold; display:inherit; width:74%; text-align:center; cursor:pointer" href="https://marmot.com/cart">Go To Cart</a>
+    </div>
+  </div>
+</div>'
+
+var message = '<div id="message" style="padding:25px 50px"><div class="cart-items-number" style="text-align:center; margin-bottom:20px; padding-bottom:20px; border-bottom:1px solid #dcdee2 "><span class="total-items" style="font-size:36px; letter-spacing:-0.26px">Your Cart - '+numberOfItems+'</span></div><div class="box-cart-products" style="float:left; width:50%; height:300px"><div class="box-cart-product" style="border-right:1px solid #dcdee2; overflow:hidden"><script>$(itemImages).each(function(i, e){$(".box-cart-product").append('<div class="box-cart-product" style="border-right:1px solid #dcdee2; overflow:hidden"><div class="box-cart-product-image" style="float:left; width:40%"><img src="'+itemImages[i]+'"/></div><div class="box-cart-product-name" style="float:right; width:60%; margin-top:50px; font-weight:bold"><span>'+itemNames[i]+'</span></div></div>')})</script></div></div><div class="order-total" style="float:left; margin-top:42px; margin-bottom:40px; width:50%; font-weight:bold"><div style="padding:30px"><span style="float:left">Estimated Total</span><span class="order-value" style="float:right">'+cartTotal+'</span></div><div style="padding:30px"><a class="box-cart-link primary-button show-for-large" style="background-color:#cc0001; color:#fff; border:1px solid #cc0001; padding:14px 30px; font-size:12px; font-weight:bold; display:inherit; width:74%; text-align:center; cursor:pointer" href="https://marmot.com/cart">Go To Cart</a></div></div></div>'
+
+
+// Iterating images
+<div id="message" style="padding:25px 50px">
+  <div class="cart-items-number" style="text-align:center; margin-bottom:20px; padding-bottom:20px; border-bottom:1px solid #dcdee2 ">
+    <span class="total-items" style="font-size:36px; letter-spacing:-0.26px">Your Cart - '+numberOfItems+'</span>
+  </div>
+  <div class="box-cart-products" style="float:left; width:50%; height:300px">
+      <script>
+          $(itemImages).each(function(i, e){
+            $(".box-cart-products").append(
+              '<div class="box-cart-product" style="border-right:1px solid #dcdee2; overflow:hidden">
+                <div class="box-cart-product-image" style="float:left; width:40%"><img src="'+itemImages[i]+'"/></div>
+              </div>'
+            )
+          })
+        </script>
+  </div>
+  <div class="order-total" style="float:left; margin-top:42px; margin-bottom:40px; width:50%; font-weight:bold">
+    <div style="padding:30px">
+      <span style="float:left">Estimated Total</span>
+      <span class="order-value" style="float:right">'+cartTotal+'</span>
+    </div>
+    <div style="padding:30px">
+      <a class="box-cart-link primary-button show-for-large" style="background-color:#cc0001; color:#fff; border:1px solid #cc0001; padding:14px 30px; font-size:12px; font-weight:bold; display:inherit; width:74%; text-align:center; cursor:pointer" href="https://marmot.com/cart">Go To Cart</a>
+    </div>
+  </div>
+</div>
+
+
+//Iterating images
+
+var message = '<div id="message" style="padding:25px 50px"><div class="cart-items-number" style="text-align:center; margin-bottom:20px; padding-bottom:20px; border-bottom:1px solid #dcdee2 "><span class="total-items" style="font-size:36px; letter-spacing:-0.26px">Your Cart - '+numberOfItems+'</span></div><div class="box-cart-products" style="float:left; width:50%; height:300px"><script>$(itemImages).each(function(i, e){$(".box-cart-products").append('<div class="box-cart-product" style="border-right:1px solid #dcdee2; overflow:hidden"><div class="box-cart-product-image" style="float:left; width:40%"><img src="'+itemImages["${i}"]+'"/></div></div>')})</script></div><div class="order-total" style="float:left; margin-top:42px; margin-bottom:40px; width:50%; font-weight:bold"><div style="padding:30px"><span style="float:left">Estimated Total</span><span class="order-value" style="float:right">'+cartTotal+'</span></div><div style="padding:30px"><a class="box-cart-link primary-button show-for-large" style="background-color:#cc0001; color:#fff; border:1px solid #cc0001; padding:14px 30px; font-size:12px; font-weight:bold; display:inherit; width:74%; text-align:center; cursor:pointer" href="https://marmot.com/cart">Go To Cart</a></div></div></div>'

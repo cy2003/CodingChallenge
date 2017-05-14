@@ -154,3 +154,30 @@ var messageBox = '<div tabindex="-1" role="dialog" class="ui-dialog ui-corner-al
 $(messageBox).dialog({
   modal:true;
 })
+
+var itemImages = $('.mini-cart-image').find('img').map(function() {return this.src}).get()
+// returns ["http://link, http://link"]
+var itemNames = $('.mini-cart-image').find('img').map(function() {return this.title}).get()
+
+if ($('.mini-cart-image').length > 0) {
+  for (var i=0; i < itemImages.length; i++){
+    <div class="box-cart-product" style="border-right:1px solid #dcdee2; overflow:hidden">
+      <div class="box-cart-product-image" style="float:left; width:40%">
+        <img src="'+itemImages[i]+'"/>
+      </div>
+      <div class="box-cart-product-name" style="float:right; width:60%; margin-top:50px; font-weight:bold">
+        <span>'+itemNames[i]+'</span>
+      </div>
+    </div>
+  }
+}
+
+
+<div class="box-cart-product" style="border-right:1px solid #dcdee2; overflow:hidden">
+  <div class="box-cart-product-image" style="float:left; width:40%">
+    <img src="'+itemImages[0]+'"/>
+  </div>
+  <div class="box-cart-product-name" style="float:right; width:60%; margin-top:50px; font-weight:bold">
+    <span>'+itemNames[0]+'</span>
+  </div>
+</div>

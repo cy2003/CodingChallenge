@@ -53,4 +53,5 @@ window.addEventListener("scroll", function(){
         })
       }
     }
+  $('.ui-button').css("font-size", "200%")
 }, false)
